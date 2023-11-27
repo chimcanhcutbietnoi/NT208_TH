@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: #0766AD;
+  height: 52px;
+}
+
+#menu {
+  list-style: none;
+  height: 48px;
+}
+
+#menu li {
+  text-align: left;
+  color: #fff;
+}
+
+#menu li a {
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 15px;
+  color: #fff;
+  background-color: #0766AD;
+}
+
+#menu > li {
+  float: left;
+  border-right: 1px solid #fff;
+  position: relative;
+}
+
+#menu > li > ul.dropdown_menu {
+  position: absolute;
+  list-style: none;
+  display: none;
+  width: 200px;
+}
+
+#menu > li:hover > a {
+  background-color: #0174BE;
+}
+
+#menu > li:hover > ul.dropdown_menu {
+  z-index: 100;
+}
+
+ul.dropdown_menu > li {
+  position: relative;
+}
+
+ul.dropdown_menu > li:hover > a {
+  background-color: #0174BE !important;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.arrow-down {
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #fff;
+}
+
+.arrow-right {
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #fff;
+}
